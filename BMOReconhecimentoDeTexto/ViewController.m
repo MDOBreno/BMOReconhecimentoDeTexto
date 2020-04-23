@@ -70,7 +70,7 @@
     NSArray *characterBoxes = [tesseract recognizedBlocksByIteratorLevel:G8PageIteratorLevelSymbol];
     NSArray *paragraphs = [tesseract recognizedBlocksByIteratorLevel:G8PageIteratorLevelParagraph];
     NSArray *characterChoices = tesseract.characterChoices;
-    UIImage *imageWithBlocks = [tesseract imageWithBlocks:characterBoxes drawText:YES thresholded:NO];
+    _ivTeste.image = [tesseract imageWithBlocks:characterBoxes drawText:YES thresholded:NO];
 }
 
 - (void)progressImageRecognitionForTesseract:(G8Tesseract *)tesseract {
