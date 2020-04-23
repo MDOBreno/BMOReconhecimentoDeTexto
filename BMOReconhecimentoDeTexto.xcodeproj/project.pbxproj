@@ -14,7 +14,24 @@
 		33698F3924513FA10077D60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33698F3824513FA10077D60E /* Assets.xcassets */; };
 		33698F3C24513FA10077D60E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33698F3A24513FA10077D60E /* LaunchScreen.storyboard */; };
 		33698F3F24513FA10077D60E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33698F3E24513FA10077D60E /* main.m */; };
+		33698F4824513FE00077D60E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; };
+		33698F4924513FE00077D60E /* TesseractOCR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33D130DF2452005100A86BC0 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 33D130DE2452005100A86BC0 /* tessdata */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33698F4A24513FE00077D60E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33698F4924513FE00077D60E /* TesseractOCR.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33698F2924513F9C0077D60E /* BMOReconhecimentoDeTexto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMOReconhecimentoDeTexto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +46,8 @@
 		33698F3B24513FA10077D60E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33698F3D24513FA10077D60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33698F3E24513FA10077D60E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33698F4624513FD90077D60E /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		33D130DE2452005100A86BC0 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33698F4824513FE00077D60E /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +81,8 @@
 		33698F2B24513F9C0077D60E /* BMOReconhecimentoDeTexto */ = {
 			isa = PBXGroup;
 			children = (
+				33D130DE2452005100A86BC0 /* tessdata */,
+				33698F4524513FB20077D60E /* Frameworks */,
 				33698F2C24513F9C0077D60E /* AppDelegate.h */,
 				33698F2D24513F9C0077D60E /* AppDelegate.m */,
 				33698F2F24513F9C0077D60E /* SceneDelegate.h */,
@@ -76,6 +98,14 @@
 			path = BMOReconhecimentoDeTexto;
 			sourceTree = "<group>";
 		};
+		33698F4524513FB20077D60E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33698F4624513FD90077D60E /* TesseractOCR.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +116,7 @@
 				33698F2524513F9C0077D60E /* Sources */,
 				33698F2624513F9C0077D60E /* Frameworks */,
 				33698F2724513F9C0077D60E /* Resources */,
+				33698F4A24513FE00077D60E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33698F3C24513FA10077D60E /* LaunchScreen.storyboard in Resources */,
+				33D130DF2452005100A86BC0 /* tessdata in Resources */,
 				33698F3924513FA10077D60E /* Assets.xcassets in Resources */,
 				33698F3724513F9C0077D60E /* Main.storyboard in Resources */,
 			);
@@ -209,6 +241,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -267,6 +300,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -291,11 +325,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5RH7482C6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BMOReconhecimentoDeTexto/Frameworks",
+				);
 				INFOPLIST_FILE = BMOReconhecimentoDeTexto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/BMOReconhecimentoDeTexto/tessdata/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ProgramasBMO.BMOReconhecimentoDeTexto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,11 +348,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5RH7482C6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BMOReconhecimentoDeTexto/Frameworks",
+				);
 				INFOPLIST_FILE = BMOReconhecimentoDeTexto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/BMOReconhecimentoDeTexto/tessdata/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ProgramasBMO.BMOReconhecimentoDeTexto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
