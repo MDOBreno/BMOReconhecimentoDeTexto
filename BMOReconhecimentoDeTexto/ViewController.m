@@ -25,7 +25,7 @@
     // See https://github.com/tesseract-ocr/tessdata.
 
     // Create your G8Tesseract object using the initWithLanguage method:
-    G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"por+eng"];
+    G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"por+spa+eng"];
 
     // Optionaly: You could specify engine to recognize with.
     // G8OCREngineModeTesseractOnly by default. It provides more features and faster
