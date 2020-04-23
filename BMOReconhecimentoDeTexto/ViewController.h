@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController <G8TesseractDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *tvTexto;
+@property (weak, nonatomic) IBOutlet UIImageView *ivTeste;
 
 @end
 
