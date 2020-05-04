@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <TesseractOCR/TesseractOCR.h>
 
-@interface ViewController : UIViewController <G8TesseractDelegate>
+@interface ViewController : UIViewController <G8TesseractDelegate> {
+    NSString *tempoMilisegundos;
+}
 
 @property (weak, nonatomic) IBOutlet UITextView *tvTexto;
 @property (weak, nonatomic) IBOutlet UIImageView *ivTeste;
+
+
 
 @end
 

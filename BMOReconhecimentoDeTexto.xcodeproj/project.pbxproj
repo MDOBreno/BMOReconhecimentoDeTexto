@@ -16,6 +16,7 @@
 		33698F3F24513FA10077D60E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33698F3E24513FA10077D60E /* main.m */; };
 		33698F4824513FE00077D60E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; };
 		33698F4924513FE00077D60E /* TesseractOCR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		336B33E72460335000557638 /* Cronometro.m in Sources */ = {isa = PBXBuildFile; fileRef = 336B33E62460335000557638 /* Cronometro.m */; };
 		33D130DF2452005100A86BC0 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 33D130DE2452005100A86BC0 /* tessdata */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		33698F3D24513FA10077D60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33698F3E24513FA10077D60E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33698F4624513FD90077D60E /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		336B33E52460331D00557638 /* Cronometro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cronometro.h; sourceTree = "<group>"; };
+		336B33E62460335000557638 /* Cronometro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cronometro.m; sourceTree = "<group>"; };
 		33D130DE2452005100A86BC0 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +97,8 @@
 				33698F3A24513FA10077D60E /* LaunchScreen.storyboard */,
 				33698F3D24513FA10077D60E /* Info.plist */,
 				33698F3E24513FA10077D60E /* main.m */,
+				336B33E52460331D00557638 /* Cronometro.h */,
+				336B33E62460335000557638 /* Cronometro.m */,
 			);
 			path = BMOReconhecimentoDeTexto;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33698F3424513F9C0077D60E /* ViewController.m in Sources */,
+				336B33E72460335000557638 /* Cronometro.m in Sources */,
 				33698F2E24513F9C0077D60E /* AppDelegate.m in Sources */,
 				33698F3F24513FA10077D60E /* main.m in Sources */,
 				33698F3124513F9C0077D60E /* SceneDelegate.m in Sources */,

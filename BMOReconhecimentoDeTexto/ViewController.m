@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Cronometro.h"
 
 @interface ViewController ()
 
@@ -57,9 +58,20 @@
 
     // Optional: Limit recognition time with a few seconds
     //tesseract.maximumRecognitionTime = 2.0;
-
+    
+    // Começa um cronometro
+    Cronometro *cronometro = [[Cronometro alloc] init];
+    [cronometro startTimer];
+    
     // Start the recognition
     [tesseract recognize];
+    
+    // Encerra o cronometro
+    [cronometro stopTimer];
+    tempoMilisegundos = [[NSNumber numberWithDouble:[cronometro timeElapsedInMilliseconds]] stringValue];
+    tempoMilisegundos = [NSString stringWithFormat:@"%@ ms", tempoMilisegundos];
+    
+
 
     // Retrieve the recognized text
     NSLog(@"%@", [tesseract recognizedText]);
@@ -71,6 +83,17 @@
     NSArray *paragraphs = [tesseract recognizedBlocksByIteratorLevel:G8PageIteratorLevelParagraph];
     NSArray *characterChoices = tesseract.characterChoices;
     _ivTeste.image = [tesseract imageWithBlocks:characterBoxes drawText:YES thresholded:NO];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    // Exite o tempo de OCR
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Google OCR Concluido"
+                               message:tempoMilisegundos
+                               preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Visualizar" style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {}];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)progressImageRecognitionForTesseract:(G8Tesseract *)tesseract {
