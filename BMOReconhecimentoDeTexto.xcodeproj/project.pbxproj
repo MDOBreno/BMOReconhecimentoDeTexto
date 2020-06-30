@@ -337,6 +337,7 @@
 					"$(PROJECT_DIR)/BMOReconhecimentoDeTexto/Frameworks",
 				);
 				INFOPLIST_FILE = BMOReconhecimentoDeTexto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +361,7 @@
 					"$(PROJECT_DIR)/BMOReconhecimentoDeTexto/Frameworks",
 				);
 				INFOPLIST_FILE = BMOReconhecimentoDeTexto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
