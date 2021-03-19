@@ -14,20 +14,20 @@
 		33698F3924513FA10077D60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33698F3824513FA10077D60E /* Assets.xcassets */; };
 		33698F3C24513FA10077D60E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33698F3A24513FA10077D60E /* LaunchScreen.storyboard */; };
 		33698F3F24513FA10077D60E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33698F3E24513FA10077D60E /* main.m */; };
-		33698F4824513FE00077D60E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; };
-		33698F4924513FE00077D60E /* TesseractOCR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		336B33E72460335000557638 /* Cronometro.m in Sources */ = {isa = PBXBuildFile; fileRef = 336B33E62460335000557638 /* Cronometro.m */; };
 		33D130DF2452005100A86BC0 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 33D130DE2452005100A86BC0 /* tessdata */; };
+		33D44E0726054F050054C5AC /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; };
+		33D44E0826054F050054C5AC /* TesseractOCR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33698F4624513FD90077D60E /* TesseractOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		33698F4A24513FE00077D60E /* Embed Frameworks */ = {
+		33D44E0926054F050054C5AC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				33698F4924513FE00077D60E /* TesseractOCR.framework in Embed Frameworks */,
+				33D44E0826054F050054C5AC /* TesseractOCR.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33698F4824513FE00077D60E /* TesseractOCR.framework in Frameworks */,
+				33D44E0726054F050054C5AC /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +121,7 @@
 				33698F2524513F9C0077D60E /* Sources */,
 				33698F2624513F9C0077D60E /* Frameworks */,
 				33698F2724513F9C0077D60E /* Resources */,
-				33698F4A24513FE00077D60E /* Embed Frameworks */,
+				33D44E0926054F050054C5AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
